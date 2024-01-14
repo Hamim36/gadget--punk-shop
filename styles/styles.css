@@ -42,6 +42,54 @@ li{
     margin-left:200px;
 }
 
+.crt-prl{
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* banner section */
+.banner-img{
+position: relative;
+ display: inline-block;
+}
+.banner-text{
+    position: absolute;
+    top:35%;
+    left:30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 130px;
+    font-weight: bold;
+    word-spacing: 10px;
+}
+
+.sdbanner-text{
+    position: absolute;
+    top:60%;
+    left:29%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    font-weight: light;
+    word-spacing: 50px;
+}
+.crt-btn{
+    position: absolute;
+    top:70%;
+    left:29%;
+    transform: translate(-50%, -50%);
+    color: black;
+    background-color:yellow;
+    border-radius:0%;
+    width:190px;
+    height:50px;
+    font-size: 20px;
+    font-weight: light;
+}
 
 /* grid cover section*/
 .grid-cover{
@@ -53,12 +101,11 @@ li{
     height:700px;
 
 }
+.banner-text{
+}
 
 .cover-item{
     border: 1px solid white;
     padding: 20px;
     font-size: 30px;
-}
-
-.overlay-text{
 }
