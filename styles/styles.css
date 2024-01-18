@@ -1,3 +1,8 @@
+/* body */
+body{
+    background-color:#090D16;
+}
+
 /* navbar section */
 
 nav {
@@ -33,21 +38,30 @@ li{
     background-color:#090D16;
     text-align:center;
     margin-top:30px;
-    border-radious:1px;
+    border:1px solid grey;
     letter-spacing:10px;
     border-color:white;
+    
 }
 
 #crt{
     margin-left:200px;
 }
 
-.crt-prl{
-}
+.crt-prl {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  .crt-prl li {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom:5px;
+  }
 
 .icon {
-    width: 20px;
-    height: 20px;
+    margin-right: 10px;
 }
 
 
@@ -83,8 +97,9 @@ position: relative;
     left:29%;
     transform: translate(-50%, -50%);
     color: black;
-    background-color:yellow;
-    border-radius:0%;
+    background-color: rgb(255, 215, 0);
+    border-radius: 50px  50px;
+    display:inline-block;
     width:190px;
     height:50px;
     font-size: 20px;
@@ -94,11 +109,13 @@ position: relative;
 /* grid cover section*/
 .grid-cover{
     display:grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, 1fr);
     background-color: #090D16;
     color:white;
-    padding: 10px;
+    padding-left:150px;
+    padding-right:150px;
     height:700px;
+    width:1900px;
 
 }
 .banner-text{
@@ -108,4 +125,128 @@ position: relative;
     border: 1px solid white;
     padding: 20px;
     font-size: 30px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid white;
+}
+/* card section */
+#latest-txt{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    word-spacing: 10px;
+    margin-top:220px;
+    margin-left:155px;
+}
+#feature-txt{
+color:white;
+margin-left:155px;
+margin-top:25px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:40px;
+    width: 1500px;
+    margin-left: 40px;
+    margin-right: 340px;
+    margin-top:40px;
+    margin-bottom:40px;
+    color:white;
+}
+
+.card {
+    text-align: center;
+    padding-left:50px;
+    width:300px;
+    height:200px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.card-content {
+    padding-left: 20px;
+}
+
+.card-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: white;
+}
+
+.addcrt-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    color: black;
+    background-color: rgb(255, 215, 0);
+    border-radius: 50px  50px;
+    transition: background-color 0.3s ease;
+}
+
+.btn i {
+    margin-right: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+.flex-container {
+    display: flex;
+    align-items:center;
+}
+.custom-button {
+    color: grey;
+    border: none;
+    font-size: 100px;
+    cursor: pointer;
+    margin-left: 80px;
+    margin-right: 10px;
+    margin-top:180px;
+}
+.custom-button:hover {
+    color: white;
+}
+
+/* cyber monday section */
+.csoon-txt{
+    position:absolute;
+    top:375%;
+    left:32%;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    word-spacing: 10px;
+}
+#visit-btn{
+    position:absolute;
+    top:454%;
+    left:50%;
+    width:200px;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    border: 2px solid white; /* Specify 'solid' for the border style */
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: transparent; /* Specify background color if needed */
+    border-color: rgb(255, 215, 0);
+    color: rgb(255, 215, 0);
+    letter-spacing:5px;
+    cursor: pointer;
+}
+
+#visit-btn:hover {
+    background-color: white;
+    color: black; 
+    border:none;
 }
